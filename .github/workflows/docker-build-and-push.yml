@@ -40,7 +40,7 @@ jobs:
               with:
                   context: src
                   push: true
-                  tags: ${{ env.REGISTRY }}/cc-youcube/youcube:latest,${{ env.REGISTRY }}/cc-youcube/youcube:alpine
+                  tags: ${{ env.REGISTRY }}/nullul/youcube:latest,${{ env.REGISTRY }}/nullul/youcube:alpine
                   labels: ${{ steps.meta.outputs.labels }}
 
     build-and-publish-nvidia:
@@ -72,5 +72,5 @@ jobs:
                   file: src/Dockerfile.nvidia
                   context: src
                   push: true
-                  tags: ${{ env.REGISTRY }}/cc-youcube/youcube:ubuntu-nvidia
+                  tags: ${{ env.REGISTRY }}/nullul/youcube:ubuntu-nvidia
                   labels: ${{ steps.meta.outputs.labels }}
